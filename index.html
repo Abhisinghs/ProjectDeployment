@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/e5a8c01b5e.js" crossorigin="anonymous"></script>
+
+    <!--typed cdn-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- header      -->
+    <div id="header">
+        <div class="container">
+            <div class="img">
+            </div>
+            <!-- nav  -->
+            <nav>
+                <img src="./images/Free_Logo_Maker_-_Get_Custom_Logo_Designs_in_Minutes___Looka_-_Google_Chrome_08-07-2023_21_09_31-removebg-preview.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <!-- hamburger icon  -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p><span class="text"></span></p>
+                <h1>Hi, I'm <span>Abhishek</span> <br>Singh From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about  -->
+    <section id="about">
+        <div class="container">
+            
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/55247-removebg-preview.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hey, I'm Abhishek, a passionate web developer focused on creating exceptional online experiences. With expertise in front-end development using HTML, CSS, and JavaScript, I strive to deliver clean and engaging websites. As a quick learner and an avid problem solver, I am always excited to take on new challenges and expand my knowledge in the ever-evolving world of web development<br>
+
+                        <br>
+                    <span> "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</span> </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web / App interfaces</li>
+                            <li><span>Front-end Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Back-end Development</span><br>Node.js, Python</li>
+                            <li><span>Database Management</span> <br> MySQL, MongoDB</li>
+                            <li><span>Version Control</span><br>Git & Github</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2UI/UX</span><br>Designing Web / App interfaces</li>
+                            <li><span>web Development</span><br>Web App Development</li>
+                            <li><span>App development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>B.Tech(CSE) From Maharishi Dayanand University</li>
+                            <li><span>2023</span><br>Communication Training at FEA Institute </li>
+                            <li><span>2022</span><br>JavaScript Training at Insta Infotech Delhi</li>
+                            <li><span>2020</span><br>12th From G.B.S.S.S Delhi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------services------------ -->
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <!-- font awesome icon -->
+                    <i class="fa-solid fa-code"></i>
+
+
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ducimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+
+
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ducimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+
+                    <i class="fa-brands fa-app-store-ios"></i>
+
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ducimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -----------portfolio------ -->
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" />
+
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, possimus.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-2.png" />
+
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, possimus.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-3.png" />
+
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, possimus.</p>
+
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- ----------------contact----------- -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i><a href="mailto:abhisheksingh35716@gmail.com">abhisheksingh35716@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square-alt"></i><a href="tel:+918448031179">+918448031179</a></p>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/Abhisinghs" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+
+                        <a href="https://www.instagram.com/abhishek_singh_shekhawat1179/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        
+                        <a href="https://www.linkedin.com/in/abhishek-singh-773b3a229/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <!-- for resume download -->
+                    <a href="images/my-cv.pdf " download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+
+                        <button type="submit" class="btn  btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &#169; abhishek. made with &#10084;</i> by Easy tutorials </p>
+            <div id="scrollUp"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div>
+        </div>
+        
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
